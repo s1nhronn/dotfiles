@@ -1,0 +1,5 @@
+#!/bin/sh
+xrandr --output DP-0 --mode 1920x1080 --rate 240 --pos 0x0
+xrandr --output DP-2 --mode 1920x1080 --rate 180 --pos 1920x0
+# Xsetup - run as root before the login dialog appears
+
