@@ -38,3 +38,4 @@ arch-update
 git
 ripgrep
 qt6ct
+jq
