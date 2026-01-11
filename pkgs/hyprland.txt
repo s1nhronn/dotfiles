@@ -1,0 +1,39 @@
+# базовый стек (могут уже быть в системе)
+hyprland
+waybar
+hyprpaper
+dunst
+wl-clipboard
+lxqt-policykit
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+
+# терминал / файловый менеджер / лаунчер
+kitty
+dolphin
+fuzzel
+
+# лок-скрин и idle
+swaylock
+swayidle
+
+# скриншоты
+grim
+slurp
+
+# сеть
+networkmanager
+network-manager-applet
+nm-connection-editor
+pavucontrol
+
+# bluetooth (если будет железо)
+bluez
+bluez-utils
+blueman
+
+# прочее
+wlogout
+arch-update
+git
+ripgrep
