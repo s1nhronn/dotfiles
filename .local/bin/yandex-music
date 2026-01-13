@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/s1nhronn/Applications/YandexMusicMod-5.66.1-2.1.1.linux_90d19c2daea64f199e5d6800b2a05faf.AppImage" "$@"
