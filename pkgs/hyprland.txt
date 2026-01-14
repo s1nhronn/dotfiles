@@ -56,3 +56,4 @@ vesktop
 hiddify
 btop
 playerctl
+cava
