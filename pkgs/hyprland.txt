@@ -55,3 +55,4 @@ ayugram
 vesktop
 hiddify
 btop
+playerctl
