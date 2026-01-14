@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "window"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "clock"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "hyprctl dispatch workspace {name}"
+  },
+
+  "window": {
+    "max-length": 80,
+    "format": "{title}"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "  muted",
+    "format-icons": {
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪",
+    "tooltip": true
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "tooltip": false
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["󰂎","󰁺","󰁼","󰁾","󰂀","󰁹"]
+  },
+
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip": false
+  }
+}
