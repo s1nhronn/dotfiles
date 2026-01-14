@@ -1,19 +1,21 @@
 {
   "layer": "top",
   "position": "top",
+
   "modules-left": [
     "hyprland/workspaces"
   ],
+
   "modules-center": [
     "window"
   ],
+
   "modules-right": [
     "tray",
     "pulseaudio",
     "network",
     "cpu",
     "memory",
-    "battery",
     "clock"
   ],
 
@@ -56,12 +58,6 @@
   "memory": {
     "format": " {percentage}%",
     "tooltip": false
-  },
-
-  "battery": {
-    "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-icons": ["󰂎","󰁺","󰁼","󰁾","󰂀","󰁹"]
   },
 
   "clock": {

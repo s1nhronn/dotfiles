@@ -35,7 +35,6 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#battery,
 #clock {
   padding: 0 8px;
   margin: 0 2px;
