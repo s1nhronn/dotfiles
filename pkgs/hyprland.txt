@@ -42,9 +42,6 @@ jq
 xclip
 ttf-jetbrains-mono-nerd
 python
-nodejs
-npm
-go
 base-devel
 ayugram
 vesktop
