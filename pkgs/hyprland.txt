@@ -50,3 +50,4 @@ btop
 playerctl
 cava
 pamixer
+neovim

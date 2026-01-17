@@ -1,0 +1,1 @@
+-- Neovim config (currently empty, managed via dotfiles)
