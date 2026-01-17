@@ -22,6 +22,7 @@
     "cpu",
     "memory",
     "custom/kbl",
+    "custom/brightness",
     "clock"
   ],
 
@@ -72,6 +73,15 @@
     "return-type": "plain",
     "tail": true,
     "format": " {}"
+  },
+
+  "custom/brightness": {
+    "exec": "~/.config/waybar/scripts/brightness_ddc.sh",
+    "return-type": "plain",
+    "interval": 1,
+    "format": " {}",
+    "on-scroll-up": "~/.config/waybar/scripts/brightness_ddc.sh up",
+    "on-scroll-down": "~/.config/waybar/scripts/brightness_ddc.sh down"
   },
   
   "clock": {

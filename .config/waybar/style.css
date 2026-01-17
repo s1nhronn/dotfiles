@@ -38,7 +38,8 @@ window#waybar {
 #clock,
 #custom-cava_mviz,
 #custom-playerctl,
-#custom-kbl {
+#custom-kbl,
+#custom-brightness {
   padding: 0 8px;
   margin: 0 2px;
   background: #181825;
