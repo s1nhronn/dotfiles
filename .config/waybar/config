@@ -3,11 +3,16 @@
   "position": "top",
 
   "modules-left": [
-    "hyprland/workspaces"
+    "custom/separator#blank",
+    "custom/cava_mviz",
+    "custom/separator#blank",
+    "custom/playerctl",
+    "custom/separator#blank_2",
+    "hyprland/window"
   ],
 
   "modules-center": [
-    "window"
+    "hyprland/workspaces"
   ],
 
   "modules-right": [
@@ -24,9 +29,10 @@
     "on-click": "hyprctl dispatch workspace {name}"
   },
 
-  "window": {
-    "max-length": 80,
-    "format": "{title}"
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 40,
+    "separate-outputs": true
   },
 
   "tray": {
@@ -62,6 +68,37 @@
 
   "clock": {
     "format": "{:%Y-%m-%d %H:%M}",
+    "tooltip": false
+  },
+
+  "custom/cava_mviz": {
+    "exec": "$HOME/.config/hypr/scripts/WaybarCava.sh",
+    "format": "{}"
+  },
+
+  "custom/playerctl": {
+    "format": "<span>{}</span>",
+    "return-type": "json",
+    "max-length": 25,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}}  {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "scroll-step": 5.0,
+    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
+    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
+    "smooth-scrolling-threshold": 1
+  },
+
+  "custom/separator#blank": {
+    "format": "",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "custom/separator#blank_2": {
+    "format": "  ",
+    "interval": "once",
     "tooltip": false
   }
 }
