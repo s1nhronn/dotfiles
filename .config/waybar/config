@@ -28,7 +28,13 @@
 
   "hyprland/workspaces": {
     "format": "{name}",
-    "on-click": "hyprctl dispatch workspace {name}"
+    "on-click": "hyprctl dispatch workspace {name}",
+    "sort-by-number": true,
+    "active-only": false,
+    "persistent-workspaces": {
+      "DP-1": [1, 2, 3, 4, 5],
+      "DP-2": [6, 7, 8, 9, 10]
+    }
   },
 
   "hyprland/window": {
