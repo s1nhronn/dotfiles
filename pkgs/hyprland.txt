@@ -39,7 +39,6 @@ git
 ripgrep
 qt6ct
 jq
-neovim
 tree-sitter
 xclip
 ttf-jetbrains-mono-nerd
