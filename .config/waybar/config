@@ -85,8 +85,6 @@
     "on-click": "playerctl previous",
     "on-click-right": "playerctl next",
     "scroll-step": 5.0,
-    "on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
-    "on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
     "smooth-scrolling-threshold": 1
   },
 
