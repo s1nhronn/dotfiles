@@ -35,7 +35,9 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#clock {
+#clock,
+#custom-cava_mviz,
+#custom-playerctl {
   padding: 0 8px;
   margin: 0 2px;
   background: #181825;
