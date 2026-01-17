@@ -21,6 +21,7 @@
     "network",
     "cpu",
     "memory",
+    "custom/kbl",
     "clock"
   ],
 
@@ -66,6 +67,13 @@
     "tooltip": false
   },
 
+  "custom/kbl": {
+    "exec": "~/.config/waybar/scripts/kblayout.sh",
+    "return-type": "plain",
+    "tail": true,
+    "format": " {}"
+  },
+  
   "clock": {
     "format": "{:%Y-%m-%d %H:%M}",
     "tooltip": false
