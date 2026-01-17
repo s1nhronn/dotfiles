@@ -39,16 +39,12 @@ git
 ripgrep
 qt6ct
 jq
-tree-sitter
 xclip
 ttf-jetbrains-mono-nerd
-lazygit
-bottom
 python
 nodejs
 npm
 go
-gdu
 base-devel
 ayugram
 vesktop
