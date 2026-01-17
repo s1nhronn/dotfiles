@@ -76,12 +76,14 @@
   },
 
   "custom/brightness": {
-    "exec": "~/.config/waybar/scripts/brightness_ddc.sh",
+    "exec": "~/.config/waybar/scripts/brightness_daemon.sh",
     "return-type": "plain",
-    "interval": 1,
+    "tail": true,
     "format": " {}",
     "on-scroll-up": "~/.config/waybar/scripts/brightness_ddc.sh up",
-    "on-scroll-down": "~/.config/waybar/scripts/brightness_ddc.sh down"
+    "on-scroll-down": "~/.config/waybar/scripts/brightness_ddc.sh down",
+    "scroll-step": 1.0,
+    "smooth-scrolling-threshold": 1
   },
   
   "clock": {

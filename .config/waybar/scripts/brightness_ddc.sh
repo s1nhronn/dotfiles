@@ -1,8 +1,8 @@
 #!/bin/sh
-# Быстрый контрол яркости через ddcutil, с кэшированием и шагом 20
+# Меняет яркость через ddcutil и обновляет кэш сразу (для быстрого UI)
 
 DISPLAYS="1 2"           # номера мониторов из `ddcutil detect`
-STEP=20                  # шаг изменения яркости
+STEP=20                  # шаг изменения
 CACHE="$HOME/.cache/brightness_ddc"
 
 read_from_ddc() {
@@ -37,33 +37,31 @@ get_current() {
 set_brightness() {
   new="$1"
 
-  # ограничиваем 0..100
   [ "$new" -lt 0 ] && new=0
   [ "$new" -gt 100 ] && new=100
 
+  # СНАЧАЛА обновляем кэш, чтобы индикатор waybar увидел новое значение
+  echo "$new" >"$CACHE"
+
+  # Потом уже отправляем команду мониторaм (это может быть медленно)
   for d in $DISPLAYS; do
     ddcutil -d "$d" setvcp 10 "$new" >/dev/null 2>&1
   done
-
-  echo "$new" >"$CACHE"
-  echo "$new"
 }
 
 case "${1-}" in
   up)
     cur=$(get_current)
     new=$((cur + STEP))
-    # set_brightness вернёт уже обрезанное значение
-    cur=$(set_brightness "$new")
+    set_brightness "$new"
     ;;
   down)
     cur=$(get_current)
     new=$((cur - STEP))
-    cur=$(set_brightness "$new")
+    set_brightness "$new"
     ;;
   *)
-    cur=$(get_current)
+    # без аргумента ничего не делаем
+    :
     ;;
 esac
-
-echo "${cur}%"
