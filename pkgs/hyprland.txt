@@ -58,3 +58,4 @@ btop
 playerctl
 cava
 pamixer
+brightnessctl
