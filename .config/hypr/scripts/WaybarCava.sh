@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# WaybarCava.sh — safer single-instance handling, cleanup, and robustness
-# Original concept by JaKooLit; this variant focuses on lifecycle hardening.
+# Простой cava-визуализатор для waybar.
+# Ждём немного после старта, потом запускаем cava.
+# По одному процессу на каждый бар.
 
-set -euo pipefail
+# чуть подождать после старта сессии, чтобы успели подняться PipeWire/Pulse и звук
+sleep 5
 
-# Ensure cava exists
+# убеждаемся, что cava есть
 if ! command -v cava >/dev/null 2>&1; then
-  echo "cava not found in PATH" >&2
-  exit 1
+  exit 0
 fi
 
 # 0..7 → ▁▂▃▄▅▆▇█
@@ -18,21 +19,12 @@ for ((i = 0; i < bar_length; i++)); do
   dict+=";s/$i/${bar:$i:1}/g"
 done
 
-# Single-instance guard (only kill our previous instance if it’s still alive)
 RUNTIME_DIR="${XDG_RUNTIME_DIR:-/tmp}"
-pidfile="$RUNTIME_DIR/waybar-cava.pid"
-if [[ -f "$pidfile" ]]; then
-  oldpid="$(cat "$pidfile" || true)"
-  if [[ -n "$oldpid" ]] && kill -0 "$oldpid" 2>/dev/null; then
-    kill "$oldpid" 2>/dev/null || true
-    sleep 0.1 || true
-  fi
-fi
-printf '%d' $$ >"$pidfile"
-
-# Unique temp config + cleanup on exit
 config_file="$(mktemp "$RUNTIME_DIR/waybar-cava.XXXXXX.conf")"
-cleanup() { rm -f "$config_file" "$pidfile"; }
+
+cleanup() {
+  rm -f "$config_file"
+}
 trap cleanup EXIT INT TERM
 
 cat >"$config_file" <<EOF
@@ -51,5 +43,5 @@ data_format = ascii
 ascii_max_range = 7
 EOF
 
-# Stream cava output and translate digits 0..7 to bar glyphs
-exec cava -p "$config_file" | sed -u "$dict"
+# запускаем cava и переводим цифры 0..7 в символы полосок
+cava -p "$config_file" 2>/dev/null | sed -u "$dict"
