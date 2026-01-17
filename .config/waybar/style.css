@@ -9,20 +9,28 @@ window#waybar {
   border-bottom: 1px solid #181825;
 }
 
+/* Общий вид кнопок workspace */
 #workspaces button {
-  padding: 0 8px;
+  padding: 0 6px;
+  margin: 0 2px;
   background: transparent;
   color: #a6adc8;
+  border-radius: 6px;
 }
 
+/* Активный workspace */
+#workspaces button.active,
 #workspaces button.focused {
-  background: #313244;
-  color: #f5c2e7;
+  background: #89b4fa;     /* голубой фон */
+  color: #11111b;          /* тёмный текст */
+  border-radius: 10px;
 }
 
+/* Срочный (urgent) workspace */
 #workspaces button.urgent {
   background: #f38ba8;
   color: #11111b;
+  border-radius: 10px;
 }
 
 #window {
