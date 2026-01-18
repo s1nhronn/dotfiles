@@ -51,3 +51,4 @@ playerctl
 cava
 pamixer
 neovim
+bat
