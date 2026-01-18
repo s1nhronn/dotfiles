@@ -53,3 +53,5 @@ pamixer
 neovim
 bat
 atuin
+lsd
+fd

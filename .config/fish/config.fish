@@ -8,3 +8,4 @@ end
 
 alias cat="bat"
 alias rm="rmt"
+alias ls="lsd"
