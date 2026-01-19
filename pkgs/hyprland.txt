@@ -55,3 +55,4 @@ bat
 atuin
 lsd
 fd
+duf

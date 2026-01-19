@@ -161,7 +161,7 @@
         "title<^qs-wlogout$>": " ",
 
         "title<btop>": " ",
-        "class<org.prismlauncher.PrismLauncher|PrismLauncher|prismlauncher>": "󰍳 ",
+        "class<org.prismlauncher.PrismLauncher|PrismLauncher|prismlauncher|io.mrarm.mcpelauncher-ui-qt>": "󰍳 ",
         "class<org.kde.dolphin>": " ",
         "class<Hiddify|hiddify-next|hiddify>": "󰕥 ",
         "class<org.freedesktop.Piper|Piper|piper>": " ",
