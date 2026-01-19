@@ -57,3 +57,4 @@ lsd
 fd
 duf
 freedownloadmanager
+xdg-user-dirs
