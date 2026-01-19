@@ -56,3 +56,4 @@ atuin
 lsd
 fd
 duf
+freedownloadmanager
