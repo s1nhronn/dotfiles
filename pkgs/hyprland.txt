@@ -58,3 +58,4 @@ fd
 duf
 freedownloadmanager
 xdg-user-dirs
+cliphist
