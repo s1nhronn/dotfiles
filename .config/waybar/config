@@ -19,6 +19,7 @@
     "tray",
     "pulseaudio",
     "network",
+    "custom/gpu",
     "cpu",
     "memory",
     "custom/kbl",
@@ -196,6 +197,14 @@
     "format-ethernet": "󰈀 {ifname}",
     "format-disconnected": "󰖪",
     "tooltip": true
+  },
+
+  "custom/gpu": {
+    "exec": "~/.config/waybar/scripts/gpu_usage.sh",
+    "interval": 2,
+    "return-type": "plain",
+    "format": "󰢮 {}",
+    "tooltip": false
   },
 
   "cpu": {

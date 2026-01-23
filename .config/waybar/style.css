@@ -41,6 +41,7 @@ window#waybar {
 #tray,
 #pulseaudio,
 #network,
+#custom-gpu,
 #cpu,
 #memory,
 #clock,
