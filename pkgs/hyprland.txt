@@ -60,3 +60,4 @@ freedownloadmanager
 xdg-user-dirs
 cliphist
 wtype
+mpv
