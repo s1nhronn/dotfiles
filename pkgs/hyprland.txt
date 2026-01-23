@@ -10,7 +10,7 @@ xdg-desktop-portal-hyprland
 
 # терминал / файловый менеджер / лаунчер
 kitty
-dolphin
+thunar
 fuzzel
 
 # лок-скрин и idle
@@ -61,3 +61,5 @@ xdg-user-dirs
 cliphist
 wtype
 mpv
+gvfs
+trash-cli
