@@ -237,7 +237,8 @@
   
   "clock": {
     "format": "{:%Y-%m-%d %H:%M}",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/calendar.sh"
   },
 
   "custom/cava_mviz": {

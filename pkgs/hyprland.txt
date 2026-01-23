@@ -63,3 +63,5 @@ wtype
 mpv
 gvfs
 trash-cli
+yad
+yad
