@@ -6,14 +6,17 @@ x-scheme-handler/http=librewolf.desktop
 x-scheme-handler/https=librewolf.desktop
 text/html=librewolf.desktop
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
-inode/directory=org.kde.dolphin.desktop
+inode/directory=thunar.desktop
 video/mp4=mpv.desktop
 video/x-matroska=mpv.desktop
 video/x-msvideo=mpv.desktop
 audio/mpeg=mpv.desktop
 audio/flac=mpv.desktop
 audio/ogg=mpv.desktop
+application/zip=org.kde.ark.desktop
+x-scheme-handler/terminal=kitty.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-AyuGram Desktop-GOZ4I3.desktop;
 x-scheme-handler/tonsite=userapp-AyuGram Desktop-5QI4I3.desktop;
+application/zip=org.kde.ark.desktop;io.mrarm.mcpelauncher-ui-qt.desktop;
