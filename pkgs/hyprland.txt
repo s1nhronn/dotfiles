@@ -1,67 +1,60 @@
-# базовый стек (могут уже быть в системе)
-hyprland
-waybar
-hyprpaper
+# 1) Десктопные пакеты (GUI-приложения)
+ayugram
+freedownloadmanager
+hiddify
+mpv
+vesktop
+
+# 2) Консольные пакеты (CLI-утилиты/разработка)
+arch-update
+atuin
+base-devel
+bat
+btop
+duf
+fd
+git
+jq
+lsd
+neovim
+python
+ripgrep
+trash-cli
+
+# 3) Пакеты для Hyprland (компоненты окружения/сессии)
+blueman
+cava
 dunst
-wl-clipboard
-lxqt-policykit
-xdg-desktop-portal
-xdg-desktop-portal-hyprland
-
-# терминал / файловый менеджер / лаунчер
-kitty
-thunar
 fuzzel
-
-# лок-скрин и idle
-swaylock
-swayidle
-
-# скриншоты
 grim
-slurp
-
-# сеть
-networkmanager
-network-manager-applet
-nm-connection-editor
+hyprland
+hyprpaper
+kitty
 pavucontrol
+qt6ct
+slurp
+swayidle
+swaylock
+thunar
+waybar
+wl-clipboard
+wlogout
 
-# bluetooth (если будет железо)
+# 4) Зависимости / базовый слой / “обвязка”
 bluez
 bluez-utils
-blueman
-
-# прочее
-wlogout
-arch-update
-git
-ripgrep
-qt6ct
-jq
-xclip
-ttf-jetbrains-mono-nerd
-python
-base-devel
-ayugram
-vesktop
-hiddify
-btop
-playerctl
-cava
-pamixer
-neovim
-bat
-atuin
-lsd
-fd
-duf
-freedownloadmanager
-xdg-user-dirs
 cliphist
-wtype
-mpv
 gvfs
-trash-cli
-yad
+lxqt-policykit
+network-manager-applet
+networkmanager
+nm-connection-editor
+pamixer
+playerctl
+ttf-jetbrains-mono-nerd
+wtype
+xclip
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xdg-user-dirs
 yad
