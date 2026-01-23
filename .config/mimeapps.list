@@ -1,0 +1,19 @@
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/tg=userapp-AyuGram Desktop-GOZ4I3.desktop
+x-scheme-handler/tonsite=userapp-AyuGram Desktop-5QI4I3.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+text/html=librewolf.desktop
+x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
+inode/directory=org.kde.dolphin.desktop
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+video/x-msvideo=mpv.desktop
+audio/mpeg=mpv.desktop
+audio/flac=mpv.desktop
+audio/ogg=mpv.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-AyuGram Desktop-GOZ4I3.desktop;
+x-scheme-handler/tonsite=userapp-AyuGram Desktop-5QI4I3.desktop;
