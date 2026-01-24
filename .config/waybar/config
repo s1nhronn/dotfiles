@@ -163,6 +163,7 @@
 
         "title<btop>": " ",
         "class<org.prismlauncher.PrismLauncher|PrismLauncher|prismlauncher|io.mrarm.mcpelauncher-ui-qt>": "󰍳 ",
+        "title<Minecraft>": "󰍳 ",
         "class<org.kde.dolphin>": " ",
         "class<Hiddify|hiddify-next|hiddify>": "󰕥 ",
         "class<org.freedesktop.Piper|Piper|piper>": " ",
