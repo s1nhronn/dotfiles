@@ -164,12 +164,14 @@
         "title<btop>": " ",
         "class<org.prismlauncher.PrismLauncher|PrismLauncher|prismlauncher|io.mrarm.mcpelauncher-ui-qt>": "󰍳 ",
         "title<Minecraft>": "󰍳 ",
+        "class<com.usebottles.bottles|Bottles>": " ",
         "class<org.kde.dolphin>": " ",
         "class<Hiddify|hiddify-next|hiddify>": "󰕥 ",
         "class<org.freedesktop.Piper|Piper|piper>": " ",
         "class<com.heroicgameslauncher.hgl|heroic|Heroic>": " ",
         "class<Lutris|lutris>": " ",
         "class<qBittorrent|qbittorrent>": " ",
+        "title<Free Download Manager>": " "
       }
   },
 
