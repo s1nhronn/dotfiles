@@ -11,13 +11,18 @@ atuin
 base-devel
 bat
 btop
+curl
 duf
 fd
+fzf
 git
 jq
+lazygit
 lsd
 neovim
 python
+python-pip
+python-pynvim
 ripgrep
 trash-cli
 
@@ -51,6 +56,8 @@ networkmanager
 nm-connection-editor
 pamixer
 playerctl
+tree-sitter
+tree-sitter-cli
 ttf-jetbrains-mono-nerd
 wtype
 xclip
@@ -58,3 +65,4 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 yad
+

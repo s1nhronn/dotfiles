@@ -1,1 +1,2 @@
--- Neovim config (currently empty, managed via dotfiles)
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
