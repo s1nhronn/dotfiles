@@ -1,7 +1,7 @@
 #!/bin/sh
 
 swayidle -w \
-  timeout 900 'swaylock -f -c 000000' \
+  timeout 900 '~/.config/hypr/scripts/lock.sh' \
   timeout 960 'hyprctl dispatch dpms off' \
   resume 'hyprctl dispatch dpms on' \
-  before-sleep 'swaylock -f -c 000000'
+  before-sleep '~/.config/hypr/scripts/lock.sh'

@@ -34,7 +34,7 @@ pavucontrol
 qt6ct
 slurp
 swayidle
-swaylock
+swaylock-effects
 thunar
 waybar
 wl-clipboard
