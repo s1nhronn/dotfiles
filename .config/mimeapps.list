@@ -15,8 +15,11 @@ audio/flac=mpv.desktop
 audio/ogg=mpv.desktop
 application/zip=org.kde.ark.desktop
 x-scheme-handler/terminal=kitty.desktop
+text/plain=micro.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-AyuGram Desktop-GOZ4I3.desktop;
 x-scheme-handler/tonsite=userapp-AyuGram Desktop-5QI4I3.desktop;
 application/zip=io.mrarm.mcpelauncher-ui-qt.desktop;org.kde.ark.desktop;
+text/plain=micro.desktop;
+application/x-shellscript=micro.desktop;
