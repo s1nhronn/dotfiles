@@ -3,7 +3,7 @@
     "controller": {
         "download_device_images": true,
         "landing_tab": 0,
-        "show_menu_bar": true,
+        "show_menu_bar": false,
         "system_qt_theme": false,
         "toolbar_style": 3,
         "window_behaviour": 0
