@@ -1,8 +1,19 @@
 # 1) Десктопные пакеты (GUI-приложения)
+appimagelauncher
+ark
 ayugram
+chromium
 freedownloadmanager
 hiddify
+libreoffice-still
+librewolf
 mpv
+obs-studio
+obsidian
+okular
+piper
+polychromatic
+qBittorrent
 vesktop
 
 # 2) Консольные пакеты (CLI-утилиты/разработка)
@@ -50,7 +61,19 @@ bluez
 bluez-utils
 cliphist
 gvfs
+hunspell
+hunspell-en_us
+hunspell-ru-aot
+hyphen
+hyphen-en
+hyphen-ru
+libmythes
+libreoffice-extension-languagetool
+libreoffice-still-ru
+linux-cachyos-headers
 lxqt-policykit
+mythes-en
+mythes-ru
 network-manager-applet
 networkmanager
 nm-connection-editor
@@ -65,4 +88,3 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 yad
-
