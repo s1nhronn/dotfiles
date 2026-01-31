@@ -2,6 +2,7 @@
 appimagelauncher
 ark
 ayugram
+bottles
 chromium
 freedownloadmanager
 hiddify
@@ -28,12 +29,9 @@ fd
 fzf
 git
 jq
-lazygit
 lsd
 neovim
 python
-python-pip
-python-pynvim
 ripgrep
 trash-cli
 
