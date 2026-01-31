@@ -16,6 +16,7 @@ piper
 polychromatic
 qBittorrent
 vesktop
+vscodium
 
 # 2) Консольные пакеты (CLI-утилиты/разработка)
 arch-update
@@ -30,7 +31,6 @@ fzf
 git
 jq
 lsd
-neovim
 python
 ripgrep
 trash-cli
