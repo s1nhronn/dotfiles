@@ -24,6 +24,7 @@ atuin
 base-devel
 bat
 btop
+clang
 curl
 duf
 fd
