@@ -16,6 +16,7 @@
   ],
 
   "modules-right": [
+    "custom/dnd",
     "tray",
     "pulseaudio",
     "network",
@@ -271,5 +272,14 @@
     "format": "  ",
     "interval": "once",
     "tooltip": false
+  },
+  "custom/dnd": {
+    "exec": "~/.config/waybar/scripts/dnd.sh",
+    "return-type": "json",
+    "tail": true,
+    "tooltip": true,
+    "on-click": "dunstctl set-paused toggle",
+    "on-click-right": "dunstctl set-paused false",
+    "on-click-middle": "dunstctl set-paused true"
   }
 }

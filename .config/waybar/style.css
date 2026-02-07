@@ -38,6 +38,34 @@ window#waybar {
   color: #cdd6f4;
 }
 
+#custom-dnd {
+  padding: 0 8px;
+  margin: 0 2px;
+  background: #181825;
+  border-radius: 4px;
+  color: #d9e0ee;
+}
+
+/* DND on — яркий акцент */
+#custom-dnd.on {
+  background: #f38ba8;   /* тот же urgent pink, если хочешь выделение */
+  color: #11111b;
+  font-weight: 600;
+}
+
+/* DND off — нейтральный */
+#custom-dnd.off {
+  background: #181825;
+  color: #cdd6f4;
+}
+
+/* missing dunstctl — серый/внимание */
+#custom-dnd.missing {
+  background: #3b4252;
+  color: #c0caf5;
+}
+
+
 #tray,
 #pulseaudio,
 #network,
