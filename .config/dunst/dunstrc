@@ -124,7 +124,7 @@
     timeout = 0
     override_pause_level = 60
     # use smashed/bell-slash glyph for critical
-    format = "<span foreground='#f38ba8'>󰂛</span> <b>%s</b>\n%b"
+    format = "<span foreground='#f38ba8'>󰂚</span> <b>%s</b>\n%b"
 
 # Example rules section - customize per app if needed.
 # Rules allow overriding background/foreground/format/timeout/etc for matching notifications.
