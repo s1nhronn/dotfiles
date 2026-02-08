@@ -51,12 +51,14 @@ window#waybar {
   background: #f38ba8;   /* тот же urgent pink, если хочешь выделение */
   color: #11111b;
   font-weight: 600;
+  padding-right: 11px;
 }
 
 /* DND off — нейтральный */
 #custom-dnd.off {
   background: #181825;
   color: #cdd6f4;
+  padding-right: 9px;
 }
 
 /* missing dunstctl — серый/внимание */

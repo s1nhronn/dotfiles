@@ -46,7 +46,7 @@ sharing_apps_list() {
 
 while true; do
     if hyprctl activewindow -j 2>/dev/null \
-        | jq -e '.fullscreen == 2' >/dev/null 2>&1; then
+        | jq -e '(.fullscreen == 1) or (.fullscreen == 2)' >/dev/null 2>&1; then
         fs="true"
     else
         fs="false"
